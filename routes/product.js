@@ -30,6 +30,9 @@ router.post(
 );
 
 //accessing
+//item_listig route
+router.get("/products", getAllProducts);
+//get single product by ID
 router.get("/product/:productId", getProduct);
 router.get("/product/photo/:productId", photo);
 
@@ -52,7 +55,7 @@ router.delete(
 );
 
 //item_listig route
-router.get("/products", getAllProducts);
+//router.get("/products", getAllProducts);
 
 //listing distinct categories
 router.get("/products/categories", getAllUniqueCategories);
